@@ -20,9 +20,9 @@ We focus on:
 ## 📊 Dataset
 
 - Source: Kaggle - *House Prices: Advanced Regression Techniques*
-- Main file used: `train.csv`
 - Rows: 1460  
 - Columns: 81  
+- Target variable: `SalePrice`
 
 ---
 
@@ -66,7 +66,7 @@ We focus on:
 Created new features:
 - `TotalSF` → Total square footage
 - `HouseAge` → Age of the house
-- `TotalBathrooms` → Combined bathroom metric
+- `RemodAge` → Years since last renovation
 
 ---
 
@@ -76,26 +76,22 @@ Created new features:
 - Strong predictors:
   - `OverallQual`
   - `GrLivArea`
+  - `GarageCars`
   - `TotalSF`
-- Several features contain **missing values**
-- Feature engineering improves data representation
-
----
-
-## 📊 Example Visualization
-
-- Correlation heatmap
-- Distribution plots
-- Boxplots for categorical variables
+- Missing values are concentrated in specific features
+- Larger living areas and higher quality significantly increase price
 
 ---
 
 ## 🚀 Future Work
 
-- Handle missing values properly
+- Handle missing values with advanced techniques
 - Encode categorical variables
-- Apply machine learning models
-- Evaluate model performance
+- Apply machine learning models:
+  - Linear Regression
+  - Random Forest
+  - XGBoost
+- Evaluate performance using RMSE / RMSLE
 
 ---
 
